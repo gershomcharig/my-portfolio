@@ -1,0 +1,20 @@
+// COLORS
+$black: #333;
+$gray: #888;
+$light-gray: #F7F7F7;
+$accent-color: #FFD600;
+
+
+
+// TYPOGRAPHY SIZES
+
+// Base values
+$text-base-size: 18px;
+$text-scale-ratio: 1.618;
+
+// Type scale
+$text-sm:   1rem / $text-scale-ratio;
+$text-md:   1rem;
+$text-lg:   1rem * $text-scale-ratio;
+$text-xl:   1rem * $text-scale-ratio * $text-scale-ratio;
+$text-xxl:  1rem * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;

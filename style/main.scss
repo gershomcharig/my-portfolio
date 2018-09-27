@@ -1,0 +1,43 @@
+@import 'global-variables';
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: $text-base-size;
+    color: $black;
+}
+
+
+
+// NAVBAR
+
+.navbar__link {
+    color: $black;
+    text-decoration: none;
+}
+
+
+
+// PORTFOLIO
+
+.portfolio__project__description {
+    color: $gray;
+    font-size: $text-md;
+}
+
+.portfolio__project__thumbnail {
+    position: relative;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: (9 / 18) * 100%;
+      background: lightgray;
+    }
+    > img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }

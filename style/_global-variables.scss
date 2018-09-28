@@ -5,16 +5,16 @@ $light-gray: #F7F7F7;
 $accent-color: #FFD600;
 
 
+// FONTS
+$primary-font: 'Work Sans', sans-serif;
+$secondary-font: 'Space Mono', monospace;
 
-// TYPOGRAPHY SIZES
 
-// Base values
+// TYPOGRAPHY SCALE
 $text-base-size: 18px;
-$text-scale-ratio: 1.618;
+$text-scale-ratio-sm: 1.2;
+$text-scale-ratio-md: 1.333;
+$text-scale-ratio-lg: 1.5;
 
-// Type scale
-$text-sm:   1rem / $text-scale-ratio;
-$text-md:   1rem;
-$text-lg:   1rem * $text-scale-ratio;
-$text-xl:   1rem * $text-scale-ratio * $text-scale-ratio;
-$text-xxl:  1rem * $text-scale-ratio * $text-scale-ratio * $text-scale-ratio;
+
+// SPACING

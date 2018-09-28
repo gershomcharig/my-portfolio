@@ -1,0 +1,59 @@
+h1, h2, h3, h4, p, small {
+    margin: 0;
+}
+
+h1, .text--xxxl {
+    font-size:      1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
+    
+    @media (min-width:640px) {
+        font-size:  1rem * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md;
+    }
+
+    @media (min-width:960px) {
+        font-size:  1rem * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg;
+    }
+}
+
+h2, .text--xxl {
+    font-size:      1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
+    
+    @media (min-width:640px) {
+        font-size:  1rem * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md;
+    }
+
+    @media (min-width:960px) {
+        font-size:  1rem * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg;
+    }
+}
+
+h3, .text--xl {
+    font-size:      1rem * $text-scale-ratio-sm * $text-scale-ratio-sm;
+
+    @media (min-width:640px) {
+        font-size:  1rem * $text-scale-ratio-md * $text-scale-ratio-md;
+    }
+
+    @media (min-width:960px) {
+        font-size:  1rem * $text-scale-ratio-lg * $text-scale-ratio-lg;
+    }
+}
+
+h4, .text--lg {
+    font-size:      1rem * $text-scale-ratio-sm;
+
+    @media (min-width:640px) {
+        font-size:  1rem * $text-scale-ratio-md;
+    }
+
+    @media (min-width:960px) {
+        font-size:  1rem * $text-scale-ratio-lg;
+    }
+}
+
+p, .text--md {
+    font-size: 1rem;
+}
+
+small, .text--sm {
+    font-size:      1rem / $text-scale-ratio-sm;
+}

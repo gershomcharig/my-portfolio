@@ -81,13 +81,11 @@ small, .text--sm {
 }
 
 .navbar {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 1rem 4vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,50 +109,21 @@ small, .text--sm {
   margin-left: 1rem;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
   font-family: "Work Sans", sans-serif;
   font-size: 18px;
   color: #333;
 }
 
-figure {
-  margin: 0;
-}
-
 .page-container {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 0.5rem;
-}
-
-@media (min-width: 35.555rem) {
-  .page-container {
-    padding: 0 1rem;
-  }
-}
-
-@media (min-width: 42.666rem) {
-  .page-container {
-    padding: 0 1.5rem;
-  }
-}
-
-@media (min-width: 53.333rem) {
-  .page-container {
-    padding: 0 2rem;
-  }
-}
-
-@media (min-width: 66.666rem) {
-  .page-container {
-    padding: 0 3rem;
-  }
-}
-
-@media (min-width: 80rem) {
-  .page-container {
-    padding: 0 5rem;
-  }
+  padding: 0 4vw;
 }
 
 .intro {

@@ -2,7 +2,9 @@
 @import 'typography';
 @import 'navbar';
 
-
+* {
+  box-sizing: border-box;
+}
 
 html, body {
     font-family: $primary-font;
@@ -10,34 +12,10 @@ html, body {
     color: $black;
 }
 
-figure {
-  margin: 0;
-}
-
 .page-container {
   max-width: $screen-xl;
   margin: 0 auto;
-  padding: 0 $space-xs;
-
-  @media (min-width:$screen-xs) {
-    padding: 0 $space-sm;
-  }
-
-  @media (min-width:$screen-sm) {
-    padding: 0 $space-md;
-  }
-
-  @media (min-width:$screen-md) {
-    padding: 0 $space-lg;
-  }
-
-  @media (min-width:$screen-lg) {
-    padding: 0 $space-xl;
-  }
-
-  @media (min-width:$screen-xl) {
-    padding: 0 $space-xxl;
-  }
+  padding: 0 4vw;
 }
 
 
@@ -51,19 +29,19 @@ figure {
 // PORTFOLIO
 
 .portfolio__project__thumbnail {
-    position: relative;
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: (9 / 18) * 100%;
-      background: lightgray;
-    }
-    > img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: (9 / 18) * 100%;
+    background: lightgray;
   }
+  > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

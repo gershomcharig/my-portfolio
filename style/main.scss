@@ -14,7 +14,39 @@ figure {
   margin: 0;
 }
 
+.page-container {
+  max-width: $screen-xl;
+  margin: 0 auto;
+  padding: 0 $space-xs;
 
+  @media (min-width:$screen-xs) {
+    padding: 0 $space-sm;
+  }
+
+  @media (min-width:$screen-sm) {
+    padding: 0 $space-md;
+  }
+
+  @media (min-width:$screen-md) {
+    padding: 0 $space-lg;
+  }
+
+  @media (min-width:$screen-lg) {
+    padding: 0 $space-xl;
+  }
+
+  @media (min-width:$screen-xl) {
+    padding: 0 $space-xxl;
+  }
+}
+
+
+
+// INTRO
+
+.intro {
+  padding: $space-xxxl 0 $space-xl;
+}
 
 // PORTFOLIO
 

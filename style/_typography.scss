@@ -1,3 +1,5 @@
+// BASIC STYLES
+
 h1, h2, h3, h4, p, small {
     margin: 0;
 }
@@ -7,10 +9,12 @@ h1, .text--xxxl {
     font-size:     1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
     
     @media (min-width:$screen-xs) {
+        letter-spacing: -2px;
         font-size: 1rem * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md;
     }
 
     @media (min-width:$screen-md) {
+        letter-spacing: -3px;
         font-size: 1rem * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg;
     }
 }
@@ -20,10 +24,12 @@ h2, .text--xxl {
     font-size:     1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
     
     @media (min-width:$screen-xs) {
+        letter-spacing: -1px;
         font-size: 1rem * $text-scale-ratio-md * $text-scale-ratio-md * $text-scale-ratio-md;
     }
 
     @media (min-width:$screen-md) {
+        letter-spacing: -2px;
         font-size: 1rem * $text-scale-ratio-lg * $text-scale-ratio-lg * $text-scale-ratio-lg;
     }
 }
@@ -37,6 +43,7 @@ h3, .text--xl {
     }
 
     @media (min-width:$screen-md) {
+        letter-spacing: -1px;
         font-size: 1rem * $text-scale-ratio-lg * $text-scale-ratio-lg;
     }
 }
@@ -57,9 +64,42 @@ h4, .text--lg {
 p, .text--md {
     line-height: 1.4;
     font-size: 1rem;
+    font-weight: $regular;
 }
 
 small, .text--sm {
     line-height: 1.2;
     font-size: 1rem / $text-scale-ratio-sm;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+// EFFECTS
+
+@mixin text-underline {
+    background: linear-gradient(to bottom, $accent-color 0%, $accent-color 100%);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 0.4em;
+    transition: background-size .2s ease-out;
+    
+    &:hover {
+        background-size: 100% 0.4em;
+    }
+}
+
+@mixin text-highlight {
+    background: linear-gradient(to bottom, $accent-color 0%, $accent-color 100%);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    transition: background-size .2s ease-out;
+    
+    &:hover {
+        background-size: 100% 100%;
+    }
 }

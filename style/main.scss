@@ -26,7 +26,20 @@ html, body {
   padding: $space-xxxl 0 $space-xl;
 }
 
+
+
 // PORTFOLIO
+
+.project {
+  display: grid;
+  
+}
+
+.project__link {
+  color: $black;
+  font-weight: $bold;
+  @include text-highlight;
+}
 
 .project__thumbnail {
   position: relative;

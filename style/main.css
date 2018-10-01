@@ -9,12 +9,14 @@ h1, .text--xxxl {
 
 @media (min-width: 640px) {
   h1, .text--xxxl {
+    letter-spacing: -2px;
     font-size: 3.15733rem;
   }
 }
 
 @media (min-width: 960px) {
   h1, .text--xxxl {
+    letter-spacing: -3px;
     font-size: 5.0625rem;
   }
 }
@@ -26,12 +28,14 @@ h2, .text--xxl {
 
 @media (min-width: 640px) {
   h2, .text--xxl {
+    letter-spacing: -1px;
     font-size: 2.36859rem;
   }
 }
 
 @media (min-width: 960px) {
   h2, .text--xxl {
+    letter-spacing: -2px;
     font-size: 3.375rem;
   }
 }
@@ -49,6 +53,7 @@ h3, .text--xl {
 
 @media (min-width: 960px) {
   h3, .text--xl {
+    letter-spacing: -1px;
     font-size: 2.25rem;
   }
 }
@@ -73,11 +78,16 @@ h4, .text--lg {
 p, .text--md {
   line-height: 1.4;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 small, .text--sm {
   line-height: 1.2;
   font-size: 0.83333rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -110,8 +120,18 @@ small, .text--sm {
 
 .navbar__link {
   color: #333;
-  text-decoration: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
+  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 0.4em;
+  -webkit-transition: background-size .2s ease-out;
+  transition: background-size .2s ease-out;
   margin-left: 1rem;
+}
+
+.navbar__link:hover {
+  background-size: 100% 0.4em;
 }
 
 * {
@@ -133,6 +153,27 @@ html, body {
 
 .intro {
   padding: 8rem 0 3rem;
+}
+
+.project {
+  display: -ms-grid;
+  display: grid;
+}
+
+.project__link {
+  color: #333;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
+  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  -webkit-transition: background-size .2s ease-out;
+  transition: background-size .2s ease-out;
+}
+
+.project__link:hover {
+  background-size: 100% 100%;
 }
 
 .project__thumbnail {

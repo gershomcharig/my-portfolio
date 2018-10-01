@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link {
+    margin-right: $space-sm;
+    color: $gray;
+    font-weight: $bold;
+    transition: color .2s $bezier-curve;
+
+    &:hover {
+        color: $black;
+    }
+    
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (min-width: $screen-xs) {
+        margin-right: $space-lg;
+    }
+}

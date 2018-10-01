@@ -3,6 +3,11 @@
     top: 0;
     z-index: 100;
     width: 100%;
+}
+
+.navbar__wrapper {
+    max-width: $screen-xl;
+    margin: 0 auto;
     padding: $space-sm 4vw;
     display: flex;
     align-items: center;

@@ -91,10 +91,11 @@ a {
 }
 
 .navbar {
+  background: white;
   position: fixed;
   top: 0;
-  z-index: 100;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar__wrapper {
@@ -125,8 +126,8 @@ a {
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0% 0.4em;
-  -webkit-transition: background-size .2s ease-out;
-  transition: background-size .2s ease-out;
+  -webkit-transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+  transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
   margin-left: 1rem;
 }
 
@@ -155,21 +156,55 @@ html, body {
   padding: 8rem 0 3rem;
 }
 
-.project {
-  display: -ms-grid;
-  display: grid;
-}
-
-.project__link {
-  color: #333;
+.intro__title__my-name {
   font-weight: 700;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
   background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 0.4em;
-  -webkit-transition: background-size .2s ease-out;
-  transition: background-size .2s ease-out;
+  -webkit-transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+  transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+}
+
+.intro__title__my-name:hover {
+  background-size: 100% 100%;
+}
+
+.portfolio {
+  margin-bottom: 5rem;
+}
+
+.project {
+  padding-bottom: 3rem;
+}
+
+.project:last-child {
+  padding-bottom: 0;
+}
+
+.project__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project__description {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.project__link {
+  color: #333;
+  font-weight: 700;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
+  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  -webkit-transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+  transition: background-size 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+  margin-bottom: 1rem;
 }
 
 .project__link:hover {
@@ -178,6 +213,9 @@ html, body {
 
 .project__thumbnail {
   position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .project__thumbnail:before {
@@ -185,14 +223,24 @@ html, body {
   content: "";
   width: 100%;
   padding-top: 50%;
-  background: lightgray;
 }
 
 .project__thumbnail > img {
   position: absolute;
+  height: 130%;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  -webkit-transition: 0.8s cubic-bezier(0.1, 0.8, 0.2, 1);
+  transition: 0.8s cubic-bezier(0.1, 0.8, 0.2, 1);
+}
+
+.project__thumbnail:hover img {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+@media (min-width: 960px) {
+  .project__thumbnail {
+    border-radius: 12px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

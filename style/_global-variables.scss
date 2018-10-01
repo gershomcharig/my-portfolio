@@ -10,7 +10,7 @@ $screen-xxxl: 1900px;
 
 // COLORS
 $black: #333;
-$gray: #888;
+$gray: #777;
 $light-gray: #F7F7F7;
 $accent-color: #FFD600;
 
@@ -37,3 +37,8 @@ $space-lg:   1rem * 2;
 $space-xl:   1rem * 3;
 $space-xxl:  1rem * 5;
 $space-xxxl: 1rem * 8;
+
+
+// OTHER
+
+$bezier-curve: cubic-bezier(0.1, 0.8, 0.2, 1);

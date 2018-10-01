@@ -24,37 +24,73 @@ html, body {
 
 .intro {
   padding: $space-xxxl 0 $space-xl;
+
+}
+
+.intro__title__my-name {
+  font-weight: $bold;
+  @include text-highlight;
 }
 
 
 
 // PORTFOLIO
 
+.portfolio {
+  margin-bottom: $space-xxl;
+}
+
 .project {
-  display: grid;
-  
+  padding-bottom: $space-xl;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.project__title {
+  font-weight: $bold;
+  margin-bottom: $space-sm;
+}
+
+.project__description {
+  color: $gray;
+  margin-bottom: $space-sm;
 }
 
 .project__link {
   color: $black;
   font-weight: $bold;
+  display: inline-block;
   @include text-highlight;
+  margin-bottom: $space-sm;
 }
 
-.project__thumbnail {
+ .project__thumbnail {
   position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+
   &:before {
     display: block;
     content: "";
     width: 100%;
-    padding-top: (9 / 18) * 100%;
-    background: lightgray;
+    padding-top: 50%;
   }
+
   > img {
     position: absolute;
+    height: 130%;
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    transition: 0.8s $bezier-curve;
+  }
+
+  &:hover img {
+    transform: scale(1.1, 1.1);
+  }
+
+  @media (min-width: $screen-md) {
+    border-radius: 12px;
   }
 }

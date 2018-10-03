@@ -1,9 +1,13 @@
 .footer {
+    text-align: center;
+}
+
+.footer__social{
     display: flex;
     justify-content: center;
 }
 
-.footer__link {
+.footer__social__link {
     margin-right: $space-sm;
     color: $gray;
     font-weight: $bold;
@@ -20,4 +24,9 @@
     @media (min-width: $screen-xs) {
         margin-right: $space-lg;
     }
+}
+
+.footer__copyright {
+    margin-top: $space-md;
+    color: $gray;
 }

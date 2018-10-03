@@ -147,6 +147,10 @@ a {
 }
 
 .footer {
+  text-align: center;
+}
+
+.footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +159,7 @@ a {
           justify-content: center;
 }
 
-.footer__link {
+.footer__social__link {
   margin-right: 1rem;
   color: #607D8B;
   font-weight: 700;
@@ -163,18 +167,23 @@ a {
   transition: color .2s;
 }
 
-.footer__link:hover {
+.footer__social__link:hover {
   color: #263238;
 }
 
-.footer__link:last-child {
+.footer__social__link:last-child {
   margin-right: 0;
 }
 
 @media (min-width: 640px) {
-  .footer__link {
+  .footer__social__link {
     margin-right: 2rem;
   }
+}
+
+.footer__copyright {
+  margin-top: 1.5rem;
+  color: #607D8B;
 }
 
 * {

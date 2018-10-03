@@ -26,3 +26,9 @@
     @include text-underline;
     margin-left: $space-sm;
 }
+
+.navbar__link--active {
+    color: $black;
+    @include text-highlight--static;
+    margin-left: $space-sm;
+}

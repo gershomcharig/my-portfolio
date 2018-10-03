@@ -103,3 +103,10 @@ a {
         background-size: 100% 100%;
     }
 }
+
+@mixin text-highlight--static {
+    background: linear-gradient(to bottom, $accent-color 0%, $accent-color 100%);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+}

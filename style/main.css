@@ -1,3 +1,4 @@
+@import url("https://rsms.me/inter/inter-ui.css");
 h1, h2, h3, h4, p, small {
   margin: 0;
 }
@@ -114,13 +115,13 @@ a {
 }
 
 .navbar__logo {
-  color: #333;
+  color: #263238;
   line-height: 0;
   margin-right: auto;
 }
 
 .navbar__link {
-  color: #333;
+  color: #263238;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
   background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
   background-position: 0 100%;
@@ -135,6 +136,16 @@ a {
   background-size: 100% 0.4em;
 }
 
+.navbar__link--active {
+  color: #263238;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
+  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  margin-left: 1rem;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,14 +157,14 @@ a {
 
 .footer__link {
   margin-right: 1rem;
-  color: #777;
+  color: #607D8B;
   font-weight: 700;
-  -webkit-transition: color 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
-  transition: color 0.2s cubic-bezier(0.1, 0.8, 0.2, 1);
+  -webkit-transition: color .2s;
+  transition: color .2s;
 }
 
 .footer__link:hover {
-  color: #333;
+  color: #263238;
 }
 
 .footer__link:last-child {
@@ -172,9 +183,9 @@ a {
 }
 
 html, body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter UI", sans-serif;
   font-size: 18px;
-  color: #333;
+  color: #263238;
 }
 
 .page-container {
@@ -262,7 +273,7 @@ section, header, footer {
 }
 
 .project__description {
-  color: #777;
+  color: #607D8B;
   margin-bottom: 1rem;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -283,7 +294,7 @@ section, header, footer {
 }
 
 .project__link > a {
-  color: #333;
+  color: #263238;
   font-weight: 700;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
   background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);

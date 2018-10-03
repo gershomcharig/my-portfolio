@@ -7,7 +7,7 @@
     margin-right: $space-sm;
     color: $gray;
     font-weight: $bold;
-    transition: color .2s $bezier-curve;
+    transition: color .2s;
 
     &:hover {
         color: $black;

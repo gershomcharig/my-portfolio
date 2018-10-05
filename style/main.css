@@ -134,8 +134,8 @@ a {
 
 .navbar__link {
   color: #263238;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
-  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFCD00), to(#FFCD00));
+  background: linear-gradient(to bottom, #FFCD00 0%, #FFCD00 100%);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0% 0.4em;
@@ -150,8 +150,8 @@ a {
 
 .navbar__link--active {
   color: #263238;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFD600), to(#FFD600));
-  background: linear-gradient(to bottom, #FFD600 0%, #FFD600 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFCD00), to(#FFCD00));
+  background: linear-gradient(to bottom, #FFCD00 0%, #FFCD00 100%);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 100% 0.4em;

@@ -65,11 +65,19 @@ p, .text--md {
     line-height: 1.4;
     font-size: 1rem;
     font-weight: $regular;
+
+    @media (min-width: $screen-md) {
+        font-size: 1rem * $text-scale-ratio-sm;
+    }
 }
 
 small, .text--sm {
     line-height: 1.2;
     font-size: 1rem / $text-scale-ratio-sm;
+
+    @media (min-width: $screen-md) {
+        font-size: 1rem;
+    }
 }
 
 a {

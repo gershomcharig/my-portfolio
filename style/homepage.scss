@@ -1,7 +1,8 @@
-@import url('https://rsms.me/inter/inter-ui.css');
 @import 'global-variables';
 @import 'mixins';
 @import 'typography';
+
+
 
 // PAGE LAYOUT
 
@@ -23,7 +24,7 @@ section, header, footer {
     padding-top: $space-xxxl;
 
     @media (min-width: $screen-md) {
-        padding-top: 13rem;
+        padding-top: $space-xxxl * 2;
     }
 }
 
@@ -46,7 +47,7 @@ section, header, footer {
     @media (min-width: $screen-sm) {
         display: grid;
         height: 100%;
-        grid-template-columns: 6fr 10fr;
+        grid-template-columns: 4fr 5fr;
         grid-template-rows: repeat(3, auto);
     }
 
@@ -54,18 +55,21 @@ section, header, footer {
         padding-bottom: $space-xxl;
     }
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-lg) {
         padding-bottom: $space-xxxl;
-        grid-template-columns: 1fr 2fr;
     }
 }
 
 .project__title {
-//  font-family: $secondary-font;
     font-weight: $bold;
     margin-bottom: $space-sm;
     grid-column: 1 / 2;
     grid-row:    1 / 3;
+
+    @media (min-width: $screen-sm) {
+        margin-top: (1 - 1.2)*0.5em; // This removes top space from text. Used to fix alignment inconsistencies. See https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
+    }
+
 }
 
 .project__description {
@@ -80,22 +84,10 @@ section, header, footer {
     grid-column: 2 / 3;
     grid-row:    2 / 3;
 
-    > a {
+    > a, .project__link--not-available {
         color: $black;
         font-weight: $bold;
         @include text-highlight;
-    }
-}
-
-.project__link--not-available {
-    margin-bottom: $space-md;
-    grid-column: 2 / 3;
-    grid-row:    2 / 3;
-
-    > span {
-        color: $black;
-        font-weight: $bold;
-        @include text-highlight--static;
     }
 }
 

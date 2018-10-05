@@ -82,9 +82,21 @@ p, .text--md {
   font-weight: 400;
 }
 
+@media (min-width: 960px) {
+  p, .text--md {
+    font-size: 1.2rem;
+  }
+}
+
 small, .text--sm {
   line-height: 1.2;
   font-size: 0.83333rem;
+}
+
+@media (min-width: 960px) {
+  small, .text--sm {
+    font-size: 1rem;
+  }
 }
 
 a {

@@ -4,11 +4,13 @@
 
 .footer__social{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .footer__social__link {
-    margin-right: $space-sm;
+    margin: 0 $space-xs;
+    display: inline;
     color: $gray;
     font-weight: $bold;
     transition: color .2s;
@@ -17,12 +19,8 @@
         color: $black;
     }
     
-    &:last-child {
-        margin-right: 0;
-    }
-
     @media (min-width: $screen-xs) {
-        margin-right: $space-lg;
+        margin: 0 $space-md;
     }
 }
 

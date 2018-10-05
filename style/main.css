@@ -166,13 +166,16 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .footer__social__link {
-  margin-right: 1rem;
+  margin: 0 0.5rem;
+  display: inline;
   color: #607D8B;
   font-weight: 700;
   -webkit-transition: color .2s;
@@ -183,13 +186,9 @@ a {
   color: #263238;
 }
 
-.footer__social__link:last-child {
-  margin-right: 0;
-}
-
 @media (min-width: 640px) {
   .footer__social__link {
-    margin-right: 2rem;
+    margin: 0 1.5rem;
   }
 }
 

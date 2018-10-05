@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="/style/reset.css" type="text/css">
     <link rel="stylesheet" href="/style/main.css" type="text/css">
     <link rel="stylesheet" href="/style/homepage.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <meta property="og:url" content="http://www.gershomcharig.com/">
     <meta property="og:title" content="Gershom Charig - Product Designer">
@@ -41,7 +42,7 @@
   </head>
   <body>
     
-    <nav class="navbar">
+    <nav class="navbar" data-aos="fade-in" data-aos-delay="50" data-aos-duration="1000">
       <div class="navbar__wrapper">
         <a class="navbar__logo" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
@@ -57,25 +58,25 @@
 
     <div class="page-container">
       <header class="intro">
-        <h1 class="intro__title">Hi, I’m <span class="intro__title__my-name">Gershom Charig</span>. I&NonBreakingSpace;design financial products and&NonBreakingSpace;brands.</h1>
+        <h1 class="intro__title" data-aos="fade-up" data-aos-delay="50"> Hi, I’m <span class="intro__title__my-name">Gershom Charig</span>. I&NonBreakingSpace;design financial products and&NonBreakingSpace;brands.</h1>
       </header>
 
       <section>
-        <article class="project">
+        <article class="project" data-aos="fade-up" data-aos-delay="400">
           <h2 class="project__title">Credimi</h2>
           <p class="project__description">A digital lending platform that makes easy for enterprises to optimize working capital and cash flow.</p>
           <p class="project__link"><span class="project__link--not-available">View case study (coming soon)</span></p>
           <div class="project__thumbnail"><img src="/images/project-thumb-placeholder.jpg"></div>
         </article>
         
-        <article class="project">
+        <article class="project" data-aos="fade-up">
           <h2 class="project__title">MoneyFarm</h2>
           <p class="project__description">An online service for people who want to invest their money in a simple and efficient way.</p>
           <p class="project__link"><a href="https://www.behance.net/gallery/14277409/MoneyFarm" target="_blank">View case study</a></p>
           <a class="project__thumbnail" href="https://www.behance.net/gallery/14277409/MoneyFarm" target="_blank"><img src="/images/project-thumb-placeholder.jpg"></a>
         </article>
 
-        <article class="project">
+        <article class="project" data-aos="fade-up">
           <h2 class="project__title">BudJet</h2>
           <p class="project__description">An iOS app that keeps track of your expenses and allows you to achieve your savings goals faster.</p>
           <p class="project__link"><a href="https://www.behance.net/gallery/24225185/BudJet" target="_blank">View case study</a></p>
@@ -85,16 +86,28 @@
       </section>
 
       <footer class="footer">
-        <div class="footer__social text--md">
+        <div class="footer__social text--md" data-aos="fade-in" data-aos-offset="0">
           <a class="footer__social__link" href="https://www.linkedin.com/in/gershomcharig/" target="_blank">LinkedIn</a>
           <a class="footer__social__link" href="https://www.behance.net/gershomcharig" target="_blank">Behance</a>
           <a class="footer__social__link" href="https://dribbble.com/gershom" target="_blank">Dribbble</a>
           <a class="footer__social__link" href="https://www.instagram.com/gershomcharig/" target="_blank">Instagram</a>
         </div>
-        <p class="footer__copyright text--sm">Copyright © Gershom Charig</p>
+        <p class="footer__copyright text--sm" data-aos="fade-in" data-aos-offset="0">Copyright © Gershom Charig</p>
       </footer>
       
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 50,
+        delay: 100,
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+      });
+    </script>
 
   </body>
 </html>

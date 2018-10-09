@@ -207,4 +207,12 @@ html, body {
   font-size: 18px;
   color: #263238;
 }
+
+::-moz-selection {
+  background: #FFCD00;
+}
+
+::selection {
+  background: #FFCD00;
+}
 /*# sourceMappingURL=main.css.map */

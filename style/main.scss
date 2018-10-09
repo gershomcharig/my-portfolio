@@ -15,3 +15,7 @@ html, body {
     font-size: $text-base-size;
     color: $black;
 }
+
+::selection {
+    background: $accent-color;
+}

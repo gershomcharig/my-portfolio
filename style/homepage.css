@@ -251,7 +251,7 @@ section, header, footer {
 
 .project__thumbnail > img {
   position: absolute;
-  height: 130%;
+  height: 100%;
   top: 0;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.1, 0.8, 0.2, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.1, 0.8, 0.2, 1);

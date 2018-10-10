@@ -6,6 +6,7 @@ h1, h2, h3, h4, p, small {
 
 h1, .text--xxxl {
     line-height: 1.1;
+    letter-spacing: -1px;
     font-size:     1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
     
     @media (min-width: $screen-xs) {
@@ -21,6 +22,7 @@ h1, .text--xxxl {
 
 h2, .text--xxl {
     line-height: 1.2;
+    letter-spacing: normal;
     font-size:     1rem * $text-scale-ratio-sm * $text-scale-ratio-sm * $text-scale-ratio-sm;
     
     @media (min-width: $screen-xs) {
@@ -36,13 +38,16 @@ h2, .text--xxl {
 
 h3, .text--xl {
     line-height: 1.3;
+    letter-spacing: normal;
     font-size:     1rem * $text-scale-ratio-sm * $text-scale-ratio-sm;
 
     @media (min-width: $screen-xs) {
+        letter-spacing: normal;
         font-size: 1rem * $text-scale-ratio-md * $text-scale-ratio-md;
     }
 
     @media (min-width: $screen-md) {
+        letter-spacing: normal;
         letter-spacing: -1px;
         font-size: 1rem * $text-scale-ratio-lg * $text-scale-ratio-lg;
     }
@@ -50,6 +55,7 @@ h3, .text--xl {
 
 h4, .text--lg {
     line-height: 1.4;
+    letter-spacing: normal;
     font-size:     1rem * $text-scale-ratio-sm;
 
     @media (min-width: $screen-xs) {
@@ -63,6 +69,7 @@ h4, .text--lg {
 
 p, .text--md {
     line-height: 1.4;
+    letter-spacing: normal;
     font-size: 1rem;
     font-weight: $regular;
 
@@ -73,6 +80,7 @@ p, .text--md {
 
 small, .text--sm {
     line-height: 1.2;
+    letter-spacing: normal;
     font-size: 1rem / $text-scale-ratio-sm;
 
     @media (min-width: $screen-md) {

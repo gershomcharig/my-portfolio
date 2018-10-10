@@ -5,6 +5,7 @@ h1, h2, h3, h4, p, small {
 
 h1, .text--xxxl {
   line-height: 1.1;
+  letter-spacing: -1px;
   font-size: 2.0736rem;
 }
 
@@ -24,6 +25,7 @@ h1, .text--xxxl {
 
 h2, .text--xxl {
   line-height: 1.2;
+  letter-spacing: normal;
   font-size: 1.728rem;
 }
 
@@ -43,17 +45,20 @@ h2, .text--xxl {
 
 h3, .text--xl {
   line-height: 1.3;
+  letter-spacing: normal;
   font-size: 1.44rem;
 }
 
 @media (min-width: 640px) {
   h3, .text--xl {
+    letter-spacing: normal;
     font-size: 1.77689rem;
   }
 }
 
 @media (min-width: 960px) {
   h3, .text--xl {
+    letter-spacing: normal;
     letter-spacing: -1px;
     font-size: 2.25rem;
   }
@@ -61,6 +66,7 @@ h3, .text--xl {
 
 h4, .text--lg {
   line-height: 1.4;
+  letter-spacing: normal;
   font-size: 1.2rem;
 }
 
@@ -78,6 +84,7 @@ h4, .text--lg {
 
 p, .text--md {
   line-height: 1.4;
+  letter-spacing: normal;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -90,6 +97,7 @@ p, .text--md {
 
 small, .text--sm {
   line-height: 1.2;
+  letter-spacing: normal;
   font-size: 0.83333rem;
 }
 

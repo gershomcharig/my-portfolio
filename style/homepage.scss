@@ -46,7 +46,6 @@ section, header, footer {
 
     @media (min-width: $screen-sm) {
         display: grid;
-        height: 100%;
         grid-template-columns: 4fr 5fr;
         grid-template-rows: repeat(3, auto);
     }

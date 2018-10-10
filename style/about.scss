@@ -1,0 +1,83 @@
+@import 'global-variables';
+@import 'mixins';
+@import 'typography';
+
+
+
+// PAGE LAYOUT
+
+.page-container {
+    max-width: $screen-xl;
+    margin: 0 auto;
+    padding: 0 4vw;
+}
+
+section, header, footer {
+    @include section-spacing;
+}
+
+
+
+// INTRO
+
+.intro {
+    padding-top: $space-xxxl;
+
+    @media (min-width: $screen-md) {
+        padding-top: $space-xxxl * 2;
+    }
+
+    h1 {
+        font-weight: $bold;
+    }
+}
+
+
+
+// CONTENT
+
+.bio h3,
+.work-experience h3 {
+    margin-bottom: $space-sm;
+    color: $gray;
+    font-weight: $bold;
+}
+
+.bio  p {
+    margin-bottom: $space-sm;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.work-experience__container {
+    margin-bottom: $space-sm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.work-experience__workplace {
+    font-weight: $bold;
+    grid-column: 1 / 2;
+    grid-row:    1 / 2;
+}
+
+.work-experience__role {
+    color: $gray;
+    grid-column: 1 / 2;
+    grid-row:    2 / 3;
+}
+
+.work-experience__timeframe {
+    text-align: right;
+    grid-column: 2 / 3;
+    grid-row:    1 / 3;
+}
+
+.work-experience a {
+    color: $black;
+    font-weight: $bold;
+    @include text-highlight;
+}

@@ -110,6 +110,24 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
+ul {
+  list-style: disc;
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+}
+
+ul > li {
+  margin-bottom: 0.5em;
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+}
+
 .page-container {
   max-width: 1440px;
   margin: 0 auto;

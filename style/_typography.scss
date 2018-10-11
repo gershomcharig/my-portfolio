@@ -92,6 +92,23 @@ a {
     text-decoration: none;
 }
 
+strong {
+    font-weight: $bold;
+}
+
+ul {
+    list-style: disc;
+    padding-inline-start: $space-sm;
+
+    > li {
+        margin-bottom: 0.5em;
+    }
+
+    > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
 
 
 // EFFECTS

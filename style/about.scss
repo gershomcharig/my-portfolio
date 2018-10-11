@@ -84,6 +84,7 @@ section, header, footer {
 
 .work-experience__timeframe {
     text-align: right;
+    font-weight: $bold;
     grid-column: 2;
     grid-row:    1;
 }

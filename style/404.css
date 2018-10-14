@@ -117,8 +117,8 @@ strong {
 
 ul {
   list-style: disc;
-  -webkit-padding-start: 1rem;
-          padding-inline-start: 1rem;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
 }
 
 ul > li {

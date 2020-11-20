@@ -115,6 +115,10 @@ strong {
   font-weight: 700;
 }
 
+em {
+  font-style: italic;
+}
+
 ul {
   list-style: disc;
   -webkit-padding-start: 1em;

@@ -111,6 +111,24 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
+ul {
+  list-style: disc;
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+}
+
+ul > li {
+  margin-bottom: 0.5em;
+}
+
+ul > li:last-child {
+  margin-bottom: 0;
+}
+
 .navbar {
   background: white;
   position: fixed;

@@ -114,6 +114,10 @@ strong {
   font-weight: 700;
 }
 
+em {
+  font-style: italic;
+}
+
 ul {
   list-style: disc;
   -webkit-padding-start: 1em;
@@ -154,8 +158,16 @@ section, header, footer {
   }
 }
 
-.intro__title__my-name {
+.intro h1 {
   font-weight: 700;
+}
+
+.intro h2 {
+  margin-top: 1.5rem;
+}
+
+.intro__title__my-name {
+  color: inherit;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFCD00), to(#FFCD00));
   background: linear-gradient(to bottom, #FFCD00 0%, #FFCD00 100%);
   background-position: 0 100%;

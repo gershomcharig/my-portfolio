@@ -26,10 +26,14 @@ section, header, footer {
     @media (min-width: $screen-md) {
         padding-top: $space-xxxl * 2;
     }
+
+    h1 { font-weight: $bold; }
+
+    h2 { margin-top: $space-md;}
 }
 
 .intro__title__my-name {
-    font-weight: $bold;
+    color: inherit;
     @include text-highlight;
 }
 

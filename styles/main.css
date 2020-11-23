@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@900&display=swap");
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -6,7 +7,6 @@ Document
 /**
 Use a better box model (opinionated).
 */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@900&display=swap");
 *,
 *::before,
 *::after {
@@ -278,6 +278,8 @@ html, body {
 
 h1 {
   font-family: "Source Serif Pro", serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.025rem;
 }
 
 .container {

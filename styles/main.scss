@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@900&display=swap');
 @import 'modern-normalize';
 @import 'variables';
 @import 'typography';
@@ -11,4 +12,3 @@
     @media (min-width: $breakpoint-lg) { max-width: $breakpoint-lg; }
     @media (min-width: $breakpoint-xl) { max-width: $breakpoint-xl; }
 }
-

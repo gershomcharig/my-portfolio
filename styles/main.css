@@ -6,6 +6,7 @@ Document
 /**
 Use a better box model (opinionated).
 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@900&display=swap");
 *,
 *::before,
 *::after {
@@ -270,6 +271,15 @@ summary {
 }
 
 /* Breakpoints */
+/* Typography */
+html, body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Source Serif Pro", serif;
+}
+
 .container {
   width: 100%;
   padding: 0 1rem;

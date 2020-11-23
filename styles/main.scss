@@ -1,5 +1,6 @@
 @import 'modern-normalize';
 @import 'variables';
+@import 'typography';
 
 .container {
     width: 100%;
@@ -10,3 +11,4 @@
     @media (min-width: $breakpoint-lg) { max-width: $breakpoint-lg; }
     @media (min-width: $breakpoint-xl) { max-width: $breakpoint-xl; }
 }
+

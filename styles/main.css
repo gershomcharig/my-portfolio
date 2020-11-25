@@ -270,10 +270,12 @@ summary {
   display: list-item;
 }
 
-/* Breakpoints */
+/* Colours */
 /* Typography */
+/* Breakpoints */
 html, body {
   font-family: "Inter", sans-serif;
+  color: #1E293B;
 }
 
 h1 {
@@ -327,6 +329,11 @@ p {
   p {
     font-size: 1.5rem;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .container {

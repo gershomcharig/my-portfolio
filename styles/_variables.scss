@@ -1,8 +1,5 @@
-/* Breakpoints */
-$breakpoint-sm: 40rem; // 640
-$breakpoint-md: 48rem; // 768
-$breakpoint-lg: 64rem; // 1024
-$breakpoint-xl: 80rem; // 1280
+/* Colours */
+$color-black: #1E293B;
 
 /* Typography */
 $font-sans-serif: 'Inter', sans-serif;
@@ -21,3 +18,9 @@ $text-6xl: 3.75rem;  // 60
 $text-7xl: 4.5rem;   // 72
 $text-8xl: 6rem;     // 96
 $text-9xl: 8rem;     // 14
+
+/* Breakpoints */
+$breakpoint-sm: 40rem; // 640
+$breakpoint-md: 48rem; // 768
+$breakpoint-lg: 64rem; // 1024
+$breakpoint-xl: 80rem; // 1280

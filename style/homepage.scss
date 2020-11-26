@@ -65,9 +65,9 @@ section, header, footer {
 
 .project__title {
     font-weight: $bold;
-    margin-bottom: $space-sm;
     grid-column: 1 / 2;
-    grid-row:    1 / 3;
+    grid-row:    2 / 4;
+    margin-bottom: $space-sm;
 
     @media (min-width: $screen-sm) {
         margin-top: (1 - 1.2)*0.5em; // This removes top space from text. Used to fix alignment inconsistencies. See https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
@@ -79,13 +79,12 @@ section, header, footer {
     color: $gray;
     margin-bottom: $space-sm;
     grid-column: 2 / 3;
-    grid-row:    1 / 2;
+    grid-row:    2 / 3;
 }
 
 .project__link {
-    margin-bottom: $space-md;
     grid-column: 2 / 3;
-    grid-row:    2 / 3;
+    grid-row:    3 / 4;
 
     > a, .project__link--not-available {
         color: $black;
@@ -100,7 +99,8 @@ section, header, footer {
     overflow: hidden;
     border-radius: 8px;
     grid-column: 1 / 3;
-    grid-row:    3 / 4;
+    grid-row:    1 / 2;
+    margin-bottom: $space-md;
 
     &:before {
         display: block;

@@ -49,7 +49,7 @@ section, header, footer {
 .work-experience {
     @media (min-width: $screen-sm) {
         display: grid;
-        grid-template-columns: 4fr 5fr;
+        grid-template-columns: 2fr 3fr;
     }
 }
 

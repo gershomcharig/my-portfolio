@@ -2,8 +2,6 @@
 @import 'mixins';
 @import 'typography';
 
-
-
 // PAGE LAYOUT
 
 .page-container {
@@ -16,8 +14,6 @@ section, header, footer {
     @include section-spacing;
 }
 
-
-
 // INTRO
 
 .intro {
@@ -28,8 +24,6 @@ section, header, footer {
     }
 }
 
-
-
 // MAIN CONTENT
 
 .main-content h3 {
@@ -39,17 +33,14 @@ section, header, footer {
     margin-bottom: $space-sm;
 }
 
-.bio,
-.skills,
-.work-experience {
+.context {
     @media (min-width: $screen-sm) {
         display: grid;
         grid-template-columns: 2fr 3fr;
     }
 }
 
-.bio  p,
-.bio ul {
+.context  p {
     margin-bottom: 1em;
     grid-column: 2;
 
@@ -57,40 +48,4 @@ section, header, footer {
         margin-bottom: 0;
     }
 
-}
-
-.work-experience__container {
-    margin-bottom: $space-md;
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.work-experience__workplace {
-    font-weight: $bold;
-    grid-column: 1;
-    grid-row:    1;
-}
-
-.work-experience__role {
-    color: $gray;
-    grid-column: 1;
-    grid-row:    2;
-}
-
-.work-experience__timeframe {
-    text-align: right;
-    font-weight: $bold;
-    grid-column: 2;
-    grid-row:    1;
-}
-
-.work-experience__resume-link {
-    grid-column: 2;
-
-    > a {
-        color: $black;
-        font-weight: $bold;
-        @include text-highlight;
-    }
 }
